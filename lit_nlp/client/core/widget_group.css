@@ -65,6 +65,11 @@
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
+  flex: 1;
+}
+
+.minimized .title {
+  text-align: right;
 }
 
 .component-row {
@@ -83,12 +88,12 @@ lit-widget {
 }
 
 .min-button {
-  flex: 1;
-  text-align: right;  
+  text-align: right;
+  flex: 0.2; /* add some clickable whitespace */
 }
 
-.minimized .min-button{
-  text-align: left;  
+.minimized .min-button {
+  text-align: left;
 }
 
 mwc-icon.icon-button {
